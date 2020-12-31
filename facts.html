@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Японски език</title>
+    <link rel="stylesheet" href="history.css">
+    <!-- Font Awesome(Logo and buttons) -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
+</head>
+<body>
+   <!-- Навигация --> 
+   <header class="navbar navbar-default navbar-fixed-top " id="top" role="banner">
+    <nav class="navbar"> 
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo" <i class="fas fa-sun"></i> Япония през моите очи</a>    
+            <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            </div>
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="/" class="navbar__links">Начало</a>
+            </li>
+            <li class="navbar__item">
+                <a href="/history.html" class="navbar__links">Същност</a>
+            </li>
+            <li class="navbar__item">
+                <a href="/culture.html" class="navbar__links">Японска култура</a>
+            </li>
+            <li class="navbar__item">
+                <a href="/tokyo.html" class="navbar__links">Токио</a>
+            </li>
+            <li class="navbar__item">
+                <a href="/facts.html" class="navbar__links">Интересни факти</a>
+            </li>
+            <li class="navbar__item">
+                <a href="/contacts.html" class="navbar__links">Контакти</a>
+            </li>
+        </ul>
+     </div>
+    </nav> 
+   </header> 
+    <!-- Mузика и текст -->
+    <div class="bg-music">
+        <audio id="myMusic" src="music.mp3" loop=""></audio>
+        <button class="btn">
+            <i class="fa fa-play-circle"></i>
+            <i class="fa fa-pause-circle"></i>
+        </button>
+    </div>
+  <script type="text/javascript"  src="app.js" charset="utf-8"></script>
+  <script src="jquery-3.5.1.min.js"></script>
+  <script type="text/javascript">
+        $(document).ready(function() {
+            $(".btn .fa-play-circle").on('click', function() {
+                $(this).hide();
+                $(".fa-pause-circle").fadeIn();
+                $("#myMusic")[0].play();
+            });
+
+            $(".btn .fa-pause-circle").on('click', function() {
+                $(this).hide();
+                $(".fa-play-circle").fadeIn();
+                $("#myMusic")[0].pause();
+            });
+        });
+    </script>
+
+    <div class="main__content">
+        <h1>А знаете ли, че...</h1>
+        <br>
+        <h3>1. На Свети Валентин в Япония обикновено жените са онези, които подаряват подаръци. <br>
+            Тази традиция позволява на момичетата да изразяват чувствата си. 
+            По този начин не им се налага да чакат мъжа да направи първата крачка. <br> Кавалерите връщат жеста на 14 март – един месец по-късно.</h3>
+            <br>
+        <h3>2. В Страната на изгряващото слънце обикновено хората правят снежни човеци само от две снежни топки.</h3>    
+            <br>
+        <h3>3. В Япония месото и рибата са наистина евтини. Плодовете обаче са доста скъпи.
+             Една ябълка струва около 2 долара, докато няколко банана – 5 долара. 
+             Може би най-скъпият плод е дизайнерската квадратна диня – намира се за около 200 долара.</h3>    
+            <br>
+        <h3>4. На Бъдни вечер японците имат навика да хапват в KFC. Местното население е съставено предимно от будисти и шинтоисти. <br>
+             То не празнува Коледа по религиозни причини, а чисто и просто – за забавление. <br>
+             KFC пък привлича клиентите с множество промоции, като пилешките крилца се превръщат в традиционно ястие по Коледа.</h3>   
+             <br>
+            
+             <h3>5. Хората в Япония ядат делфини. Те приготвят специални супи от тях. Много световни организации са се обявили против тази практика.</h3>  
+             <br>
+             <h3>6. В метрото в Япония има мотриси, предназначени специално за жени. Те се използват най-вече в час пик. По този начин дамите се чувстват по-сигурни.</h3>
+             <br>
+             <h3>7. Хелоу Кити всъщност е английско момиче. Поне така твърди нейната създателка. 
+                 Когато е била създадена през 70-те години на миналия век, японците са проявявали силен интерес към британската култура.</h3>
+                 <br>
+        <h3>8. Служителите в Япония никога не си тръгват от работа навреме. В тази страна работещите изчакват първо да си тръгне шефът им и чак тогава да се приберат вкъщи.
+                      И тъй като японците са известни със своя работохолизъм, шефовете често остават 3-4 часа след работно време. 
+                      А понякога шефът може да покани служителите си да пийнат след работа и те не могат да му откажат. 
+                      Тръгването навреме (дори да имате основателна причина за това) показва нелоялност към фирмата и не се приема добре.</h3>
+                      <br> 
+        <h3>9. Учебната година в Япония започва на 1 април. Учебният процес е разделен на три срока.</h3>
+        <br>
+        <h3>10. На ученичките в Япония не им е позволено да носят чорапогащници, независимо колко студено е навън. 
+            Полата и дългите чорапи до коленете са част от униформата им. Дори и чорапогащниците да бяха разрешени, много от японките пак не биха ги носили 
+            – за тях е въпрос на чест и да традиция да покажат, че не се плашат от студа.</h3>
+            <br>
+        <h3>11. Роклите и блузите с изрязани деколтета се възприемат за вулгарни. Същевременно обаче по улиците на Япония е съвсем нормално да видите жена с наистина къса пола.</h3> 
+        <br>
+        <h3>12. Концепцията за чест е наистина важна за японския народ. Юкио Хатояма – предишният министър-председател- напусна, тъй като не успя да изпълни предизборните си обещания.
+             Министрите преди него постъпиха по абсолютно същия начин.</h3>   
+    </div>
